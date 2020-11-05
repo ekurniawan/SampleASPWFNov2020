@@ -159,6 +159,8 @@
     <Content Include="SetupBerita.aspx" />
     <Content Include="SetupCategory.aspx" />
     <Content Include="SetupKategori.aspx" />
+    <Content Include="SetupProduct.aspx" />
+    <Content Include="SetupProductOD.aspx" />
     <Content Include="Site.Master" />
     <Content Include="TestSession.aspx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -183,6 +185,7 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DAL\CategoryDAL.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -200,6 +203,7 @@
     <Compile Include="ListProductByCategory.aspx.designer.cs">
       <DependentUpon>ListProductByCategory.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SetupBerita.aspx.cs">
       <DependentUpon>SetupBerita.aspx</DependentUpon>
@@ -221,6 +225,20 @@
     </Compile>
     <Compile Include="SetupKategori.aspx.designer.cs">
       <DependentUpon>SetupKategori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetupProduct.aspx.cs">
+      <DependentUpon>SetupProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetupProduct.aspx.designer.cs">
+      <DependentUpon>SetupProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetupProductOD.aspx.cs">
+      <DependentUpon>SetupProductOD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetupProductOD.aspx.designer.cs">
+      <DependentUpon>SetupProductOD.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -253,7 +271,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="DAL\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
