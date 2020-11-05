@@ -127,6 +127,7 @@
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\gambar1.png" />
     <Content Include="Images\gambar2.png" />
+    <Content Include="ListProductByCategory.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -159,6 +160,7 @@
     <Content Include="SetupCategory.aspx" />
     <Content Include="SetupKategori.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="TestSession.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -190,6 +192,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ListProductByCategory.aspx.cs">
+      <DependentUpon>ListProductByCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListProductByCategory.aspx.designer.cs">
+      <DependentUpon>ListProductByCategory.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SetupBerita.aspx.cs">
@@ -227,6 +236,13 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="TestSession.aspx.cs">
+      <DependentUpon>TestSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestSession.aspx.designer.cs">
+      <DependentUpon>TestSession.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -237,6 +253,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="DAL\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
