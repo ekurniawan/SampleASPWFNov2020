@@ -17,12 +17,12 @@ namespace SampleDbCSharp.DAL
                 .ConnectionStrings["WingToysDbConnectionString"].ConnectionString;
         }
 
-        public IEnumerable<Product> GetAll()
+        public IEnumerable<ViewProductWithCategory> GetAll()
         {
             using(SqlConnection conn = new SqlConnection(GetConnStr()))
             {
-                string strSql = @"select * from Products order by ProductName asc";
-                var results = conn.Query<Product>(strSql);
+                string strSql = @"select * from ViewProductWithCategory order by ProductName asc";
+                var results = conn.Query<ViewProductWithCategory>(strSql);
                 return results;
             }
         }
@@ -42,6 +42,35 @@ namespace SampleDbCSharp.DAL
                     ImagePath = ImagePath,
                     UnitPrice = UnitPrice,
                     CategoryID = CategoryID
+                };
+                try
+                {
+                    conn.Execute(strSql, param);
+                }
+                catch (SqlException sqlEx)
+                {
+                    throw new Exception($"Error: {sqlEx.Message}");
+                }
+            }
+        }
+
+        public void UpdateProduct(int ProductID,string ProductName, string Description,
+            string ImagePath, double? UnitPrice, int? CategoryID)
+        {
+            using (SqlConnection conn = new SqlConnection(GetConnStr()))
+            {
+                //parameterize query agar tidak kena sql injection
+                string strSql = @"update Products set ProductName=@ProductName,Description=@Description,
+                                ImagePath=@ImagePath,UnitPrice=@UnitPrice,CategoryID=@CategoryID 
+                                where ProductID=@ProductID";
+                var param = new
+                {
+                    ProductName = ProductName,
+                    Description = Description,
+                    ImagePath = ImagePath,
+                    UnitPrice = UnitPrice,
+                    CategoryID = CategoryID,
+                    ProductID = ProductID
                 };
                 try
                 {
