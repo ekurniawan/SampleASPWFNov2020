@@ -12,7 +12,8 @@ namespace SampleDbCSharp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lblDate1.Text = DateTime.Now.ToString();
+            lblDate2.Text = DateTime.Now.ToString();
         }
 
         protected void btnInsertProduct_Click(object sender, EventArgs e)

@@ -33,6 +33,15 @@ namespace SampleDbCSharp
         protected global::System.Web.UI.WebControls.ObjectDataSource odsKategori;
 
         /// <summary>
+        /// upInsertProduct control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel upInsertProduct;
+
+        /// <summary>
         /// ltKeterangan control.
         /// </summary>
         /// <remarks>
@@ -94,6 +103,33 @@ namespace SampleDbCSharp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnInsertProduct;
+
+        /// <summary>
+        /// lblDate1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDate1;
+
+        /// <summary>
+        /// upGridProduct control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel upGridProduct;
+
+        /// <summary>
+        /// lblDate2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDate2;
 
         /// <summary>
         /// gvProduct control.
