@@ -44,6 +44,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.35\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
@@ -160,6 +163,7 @@
     <Content Include="SetupCategory.aspx" />
     <Content Include="SetupKategori.aspx" />
     <Content Include="SetupProduct.aspx" />
+    <Content Include="SetupProductDapper.aspx" />
     <Content Include="SetupProductOD.aspx" />
     <Content Include="Site.Master" />
     <Content Include="TestSession.aspx" />
@@ -186,6 +190,7 @@
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="DAL\CategoryDAL.cs" />
+    <Compile Include="DAL\ProductsDAL.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -196,6 +201,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\Helpers.cs" />
     <Compile Include="ListProductByCategory.aspx.cs">
       <DependentUpon>ListProductByCategory.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -204,6 +210,7 @@
       <DependentUpon>ListProductByCategory.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SetupBerita.aspx.cs">
       <DependentUpon>SetupBerita.aspx</DependentUpon>
@@ -232,6 +239,13 @@
     </Compile>
     <Compile Include="SetupProduct.aspx.designer.cs">
       <DependentUpon>SetupProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetupProductDapper.aspx.cs">
+      <DependentUpon>SetupProductDapper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetupProductDapper.aspx.designer.cs">
+      <DependentUpon>SetupProductDapper.aspx</DependentUpon>
     </Compile>
     <Compile Include="SetupProductOD.aspx.cs">
       <DependentUpon>SetupProductOD.aspx</DependentUpon>

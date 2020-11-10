@@ -5,6 +5,7 @@ using System.Web;
 using System.Data.SqlClient;
 using System.Web.Configuration;
 using SampleDbCSharp.Models;
+using Dapper;
 
 namespace SampleDbCSharp.DAL
 {
