@@ -22,5 +22,10 @@ namespace SampleDbCSharp.Helpers
                     return false;
             }
         }
+
+        public static string GetRestUrl()
+        {
+            return "https://localhost:44354/";
+        }
     }
 }
